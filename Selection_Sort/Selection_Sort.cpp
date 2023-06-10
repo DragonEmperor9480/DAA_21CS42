@@ -6,6 +6,8 @@ using namespace std;
     cout<<"Enter the number of elements in array"<<endl;
     cin>>a;
     int b[a];
+    cout<<"Enter the Array elements"<<endl;
+
     for(i = 0; i < a; i++)
     cin>>b[i];
 
