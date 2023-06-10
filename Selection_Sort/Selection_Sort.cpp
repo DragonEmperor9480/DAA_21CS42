@@ -26,5 +26,6 @@ using namespace std;
     for(i = 0; i < a; i++)
     cout<<b[i]<<" ";
     return 0;
+    
  }
  
