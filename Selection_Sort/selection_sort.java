@@ -6,6 +6,7 @@ public class selection_sort {
     Scanner scn = new Scanner(System.in);
     Random ran = new Random();
     int a,i,j,min,temp;
+    long start,end;
     System.out.println("Enter the number of elements in array");
     a = scn.nextInt();
     int b[] = new int[a];
@@ -14,8 +15,23 @@ public class selection_sort {
     b[i] = ran.nextInt(5000);
     c[i] = b[i];
     }
-     for( i = 0; i < a - 1; i++)
+    for( i = 0; i < a-1 ; i++)
     {
+    sorting(a,i,b);
+
+    }
+
+    System.out.println("The Array before sorting is:");
+        for(i = 0; i < a; i++)
+        System.out.print(c[i] + " ");
+        System.out.println("\n");
+    System.out.println("The Sorted Array is:");
+        for(i = 0; i < a; i++)
+        System.out.println(b[i] + "  ");
+    
+    }
+    static void sorting(int a,int i,int[] b)
+    {   int j,temp,min;
     min = i;
 
     for(j = i+1; j < a; j++)
@@ -26,15 +42,6 @@ public class selection_sort {
         temp = b[min];
         b[min] = b[i];
         b[i] = temp;
-    }
-    System.out.println("The Array before sorting is:");
-        for(i = 0; i < a; i++)
-        System.out.print(c[i] + " ");
-        System.out.println("\n");
-    System.out.println("The Sorted Array is:");
-        for(i = 0; i < a; i++)
-        System.out.print(b[i] + " ");
     
-    }
-    
+    }    
 }
