@@ -8,7 +8,6 @@ public class selection_sort {
         a = 15000;
         int b[] = new int[a];
         int c[] = new int[a];
-        int d[] = new int[a];
 
         for (i = 0; i < a; i++) {
             b[i] = ran.nextInt(5000);
