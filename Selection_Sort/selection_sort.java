@@ -29,10 +29,7 @@ public class selection_sort {
         end = System.currentTimeMillis();
         long bestCaseTime = end - start;
         // Worst case
-        for (i = 0; i < a; i++) {
-            b[i] = i + 1; 
-            d[i] = b[i];
-        }
+
         for (i = 0; i < a - 1; i++) {
             for (j = i + 1; j < a; j++) {
                 temp = b[i];
