@@ -1,0 +1,5 @@
+3 cases in selection sort:-
+
+Average case:- Sorting the Array randomly.
+Best case:- Sorting the sorted Array.
+Worst case:- reversing the sorted array and sorting it.
