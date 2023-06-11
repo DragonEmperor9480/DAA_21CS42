@@ -1,9 +1,7 @@
-import java.util.Scanner;
 import java.util.Random;
 
 public class selection_sort {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
         Random ran = new Random();
         int a, i, j, min, temp;
         long start, end;
