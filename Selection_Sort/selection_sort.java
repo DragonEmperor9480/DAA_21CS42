@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class selection_sort {
     public static void main(String[] args) {
         Random ran = new Random();
-        Scanner scn = new Scanner (System.in)
+        Scanner scn = new Scanner (System.in);
         int a, i, j, min, temp;
         long start, end;
         System.out.println("Enter the Number of Array Elements");
