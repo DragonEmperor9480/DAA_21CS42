@@ -1,11 +1,14 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class selection_sort {
     public static void main(String[] args) {
         Random ran = new Random();
+        Scanner scn = new Scanner (System.in)
         int a, i, j, min, temp;
         long start, end;
-        a = 15000;
+        System.out.println("Enter the Number of Array Elements");
+        a = scn.nextInt();
         int b[] = new int[a];
         int c[] = new int[a];
 
@@ -50,7 +53,7 @@ public class selection_sort {
 
         System.out.println("The Sorted Array is:");
         for (i = 0; i < a; i++)
-            System.out.println(b[i] + "  ");
+            System.out.print(b[i] + "  ");
         System.out.println();
 
         System.out.println("Best case: " + bestCaseTime + "ms");
