@@ -18,18 +18,14 @@ public class quick_sort {
             System.out.println();
         System.out.println("Array after sorting:");
 
-        
-
         // avg Case
-        int[] worstCaseArray = a.clone(); 
+        int[] avgCaseArray = a.clone(); 
         startTime = System.currentTimeMillis();
-        sorting(worstCaseArray, 0, n - 1);
+        sorting(avgCaseArray, 0, n - 1);
         endTime = System.currentTimeMillis();
         long avgCaseTime = (endTime - startTime);
-
+        
         // worst Case
-        int[] avgCaseArray = new int[n];
-
         for (i = 0; i < n - 1; i++) {
             for (j = i + 1; j < n; j++) {
                 temp = avgCaseArray[i];
