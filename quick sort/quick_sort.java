@@ -14,7 +14,8 @@ public class quick_sort {
             a[i] = ran.nextInt(50000);
         System.out.println("Array before sorting:");
         for (i = 0; i < n; i++)
-            System.out.println(a[i]);
+            System.out.print(a[i]+" ");
+            System.out.println();
         System.out.println("Array after sorting:");
 
         
@@ -48,7 +49,8 @@ public class quick_sort {
         sorting(bestCaseArray, 0, n - 1);
         endTime = System.currentTimeMillis();
         for (i = 0; i < n; i++)
-            System.out.println(bestCaseArray[i]);
+            System.out.print(bestCaseArray[i]+ " ");
+            System.out.println();
         long bestCaseTime = (endTime - startTime); 
 
         System.out.println("Time taken (Best Case): " + bestCaseTime + " milliseconds");
