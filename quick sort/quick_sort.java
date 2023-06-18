@@ -27,7 +27,7 @@ public class quick_sort {
         endTime = System.currentTimeMillis();
         long avgCaseTime = (endTime - startTime);
 
-        // avg Case
+        // worst Case
         int[] avgCaseArray = new int[n];
 
         for (i = 0; i < n - 1; i++) {
